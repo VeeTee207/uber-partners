@@ -362,16 +362,32 @@ nav
 			color: rgb(132, 201, 207)
 			text-decoration: none
 
-.footer
-	display: flex
-	justify-content: space-between
+footer 
 	padding: 14px 23px 39px 23px
-	&_socials
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
 		width: 160px
 		display: flex
-		justify-content: space-around
-		align-items: center
-		&_item
+		justify-content: space-between
+		&_item 
 			display: flex 
 			justify-content: center
 			align-items: center
@@ -382,46 +398,35 @@ nav
 			border-radius: 100%
 			i 
 				color: #fff
-	.footer_links
-		width: 392px
-		display: flex
-		flex-direction: column
-		justify-content: space-around
-		&_main
-			display: flex
-			justify-content: space-around
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
 			padding: 0 10px
-			a
+			a 
+				color: #070716
 				font-size: 15px
 				font-weight: 300
 				text-transform: uppercase
-				color: #070716
-			
-		&:before
-			content: ''
-			display: block
-			width: 300px
-			height: 5px
-			background-color: $main_color
-			margin: 2px auto 40px auto
-
-
-		&_sub
-			display: flex
-			justify-content: space-around
-			padding: 0 10px
-			a
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
 				font-size: 11px
 				font-weight: 300
 				text-transform: uppercase
-				color: #999999
-		&_lang
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
 			text-align: center
-			color: $main_color
-				
-	.mobiles
-		width: 162px
-		// to add extra column :
-		// text-align: center
-		// color: green
-	 	
+
+	&_mobile
